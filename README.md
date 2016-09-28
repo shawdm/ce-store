@@ -35,6 +35,11 @@ mvn tomcat:run
 
 The CE Store will be available at the following URL [http://localhost:8080/ce-store](http://localhost:8080/ce-store)
 
+To build the war file for deployment in Bluemix run
+```
+mvn package
+```
+
 ### Using Docker
 
 Use Apache Maven to build a WAR file for the project with the following command.

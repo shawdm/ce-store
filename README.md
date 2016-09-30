@@ -16,6 +16,17 @@ We are an IBM initiated open source organisation focused on providing an experim
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ce-store/ce-store)
 
+### Deploying Manually
+Build the war file for deployment.
+```
+mvn package
+```
+
+Edit the ````manifest.yml```` file with the host name for the application and push to bluemix
+````
+cf push
+````
+
 ## Installation and Setup
 
 Clone the code

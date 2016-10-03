@@ -16,6 +16,7 @@ public abstract class ActionContext {
 	private String ceStoreName = null;
 	private String userName = null;
 	private String credentials = null;
+	private String ceRoot = null;
 
 	private ModelBuilder mb = null;
 	private StoreConfig conf = null;
@@ -24,7 +25,6 @@ public abstract class ActionContext {
 	private SessionCreations sc = null; // Lazy initialised
 
 	private boolean executingQueryOrRule = false;
-	private boolean cachedCeLoading = false;
 	private boolean validatingOnly = false;
 	private boolean autoExecuteRules = false;
 	private boolean keepSentences = false;
@@ -48,6 +48,14 @@ public abstract class ActionContext {
 
 	public String getCeStoreName() {
 		return this.ceStoreName;
+	}
+
+	public String getCeRoot() {
+		return this.ceRoot;
+	}
+
+	public void setCeRoot(String pVal) {
+		this.ceRoot = pVal;
 	}
 
 	public String getUserName() {
@@ -117,14 +125,6 @@ public abstract class ActionContext {
 
 	public void markAsExecutingQueryOrRule(boolean pVal) {
 		this.executingQueryOrRule = pVal;
-	}
-
-	public boolean isCachedCeLoading() {
-		return this.cachedCeLoading;
-	}
-
-	public void markAsCachedCeLoading() {
-		this.cachedCeLoading = true;
 	}
 
 	public boolean isValidatingOnly() {

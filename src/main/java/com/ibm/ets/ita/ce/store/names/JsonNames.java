@@ -181,8 +181,7 @@ public class JsonNames {
 	public static final String JSON_INST_COUNT = "instance_count";
 	public static final String JSON_STRUCTURED = "structured_response";
 
-	public static final String JSON_ENV_PROPS = "environment_properties";
-	public static final String JSON_GEN_PROPS = "general_properties";
+	public static final String JSON_STOREPROPS = "store_properties";
 
 	public static final String JSON_VALUE = "value";
 	public static final String JSON_RANGE = "range";
@@ -213,6 +212,7 @@ public class JsonNames {
 	public static final String JSON_Q_TEXT = "text";
 	public static final String JSON_Q_WORDS = "words";
 	public static final String JSON_ANSWERS = "answers";
+	public static final String JSON_ANSWER = "answer";
 	public static final String JSON_A_RESTEXT = "result text";
 	public static final String JSON_A_CONF = "confidence";
 	public static final String JSON_INTS = "interpretations";
